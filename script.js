@@ -35,7 +35,7 @@ function playRound(humanPlayer, computerPlayer) {
 
 // game loop for five turns
 
-function game() {
+function loopGame() {
     for (i = 0; i < 5; i++) {
 
         //computer choice
@@ -63,4 +63,4 @@ function game() {
     }
 }
 
-console.log(game());
+console.log(loopGame());
