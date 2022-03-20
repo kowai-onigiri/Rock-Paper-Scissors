@@ -1,66 +1,123 @@
-//game play
-function playRound(humanPlayer, computerPlayer) {
+// rock
 
-    if (humanPlayer == computerPlayer) {
-        alert("It's a tie!");
+function choiceRock (computerPlayer) {
+    if (computerPlayer == "rock") {
+        alert("You tie!");
     }
-
-    else if (humanPlayer == "rock") {
-        if (computerPlayer == "scissors") {
-            alert("You win!");
-        }
-        else if (computerPlayer == "paper") {
-            alert("You lose!");
-        }
+    else if (computerPlayer == "scissors") {
+        alert("You win!");
     }
-
-    else if (humanPlayer == "paper") {
-        if (computerPlayer == "rock") {
-            alert("You win!");
-        }
-        else if (computerPlayer == "scissors") {
-            alert("You lose!");
-        }
-    }
-
-    else if (humanPlayer == "scissors") {
-        if (computerPlayer == "paper") {
-            alert("You win!");
-        }
-        else if (computerPlayer == "rock") {
-            alert("You lose!")
-        }
+    else if (computerPlayer == "paper") {
+        alert("You lose!");
     }
 }
 
-// game loop for five turns
 
-function loopGame() {
-    for (i = 0; i < 5; i++) {
+function playRock () {
 
-        //computer choice
-        const computerRand = Math.floor(Math.random()*3)+1;
+    const computerRand = Math.floor(Math.random()*3)+1;
 
-        function computerChoice(computerRand) {
-            if (computerRand == 1) {
-                return "rock";
-            }
-            else if (computerRand == 2) {
-                return "paper";
-            }
-            else {
-                return "scissors";
-            }
+    function computerChoice(computerRand) {
+        if (computerRand == 1) {
+            return "rock";
         }
+        else if (computerRand == 2) {
+            return "paper";
+        }
+        else {
+            return "scissors";
+        }
+    }
+    const computerPlayer = computerChoice(computerRand);
 
-        const computerPlayer = computerChoice(computerRand);
+    console.log(choiceRock(computerPlayer));
+
         
-        // human choice
-        const humanPlayer = prompt("Choose rock, paper, or scissors and write it below:");
 
-        //call gameplay
-        console.log(playRound(humanPlayer, computerPlayer));
+}
+
+const rock = document.querySelector('#rock');
+rock.addEventListener('click', playRock);
+
+// paper
+
+function choicePaper (computerPlayer) {
+    if (computerPlayer == "paper") {
+        alert("You tie!");
+    }
+    else if (computerPlayer == "rock") {
+        alert("You win!");
+    }
+    else if (computerPlayer == "scissors") {
+        alert("You lose!");
     }
 }
 
-console.log(loopGame());
+
+function playPaper () {
+
+    const computerRand = Math.floor(Math.random()*3)+1;
+
+    function computerChoice(computerRand) {
+        if (computerRand == 1) {
+            return "rock";
+        }
+        else if (computerRand == 2) {
+            return "paper";
+        }
+        else {
+            return "scissors";
+        }
+    }
+    const computerPlayer = computerChoice(computerRand);
+
+    console.log(choicePaper(computerPlayer));
+
+        
+
+}
+
+const paper = document.querySelector('#paper');
+paper.addEventListener('click', playPaper);
+
+
+
+// scissors
+
+function choiceScissors (computerPlayer) {
+    if (computerPlayer == "scissors") {
+        alert("You tie!");
+    }
+    else if (computerPlayer == "paper") {
+        alert("You win!");
+    }
+    else if (computerPlayer == "rock") {
+        alert("You lose!");
+    }
+}
+
+
+function playScissors () {
+
+    const computerRand = Math.floor(Math.random()*3)+1;
+
+    function computerChoice(computerRand) {
+        if (computerRand == 1) {
+            return "rock";
+        }
+        else if (computerRand == 2) {
+            return "paper";
+        }
+        else {
+            return "scissors";
+        }
+    }
+    const computerPlayer = computerChoice(computerRand);
+
+    console.log(choiceScissors(computerPlayer));
+
+
+}
+
+const scissors = document.querySelector('#scissors');
+scissors.addEventListener('click', playScissors);

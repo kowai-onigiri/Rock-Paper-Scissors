@@ -1,4 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-image: url("images/pexels-lisa-fotios-9930150.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: #cccccc;
+    font-family: "Quicksand", sans-serif;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    
+    
+}
+
+.opaqueBack {
+    display: flex;
+    width: 500px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 50px 50px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.headerTitle {
+    display: flex;
+    padding-bottom: 50px;
+    color: #fff;
+}
+
+.challenge {
+    display: flex;
+    text-align: center;
+}
+
+.rpsBtns {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    padding-top: 20px;
+}
+
+#rock {
+    width: 100px;
+    height: 50px;
+    border: 5px solid white;
+    border-radius: 8px;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0);
+}
+
+#rock:hover {
+    color: #7FAD8D;
+    border: 5px solid #7FAD8D;
+}
+
+#paper {
+    width: 100px;
+    height: 50px;
+    border: 5px solid white;
+    border-radius: 8px;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0);
+}
+
+#paper:hover {
+    color: #7FAD8D;
+    border: 5px solid #7FAD8D;
+}
+
+#scissors {
+    width: 100px;
+    height: 50px;
+    border: 5px solid white;
+    border-radius: 8px;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0);
+}
+
+#scissors:hover {
+    color: #7FAD8D;
+    border: 5px solid #7FAD8D;
 }
