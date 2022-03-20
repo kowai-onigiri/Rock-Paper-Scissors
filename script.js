@@ -2,33 +2,33 @@
 function playRound(humanPlayer, computerPlayer) {
 
     if (humanPlayer == computerPlayer) {
-        console.log("It's a tie!");
+        alert("It's a tie!");
     }
 
     else if (humanPlayer == "rock") {
         if (computerPlayer == "scissors") {
-            console.log("You win!");
+            alert("You win!");
         }
         else if (computerPlayer == "paper") {
-            console.log("You lose!");
+            alert("You lose!");
         }
     }
 
     else if (humanPlayer == "paper") {
         if (computerPlayer == "rock") {
-            console.log("You win!");
+            alert("You win!");
         }
         else if (computerPlayer == "scissors") {
-            console.log("You lose!");
+            alert("You lose!");
         }
     }
 
     else if (humanPlayer == "scissors") {
         if (computerPlayer == "paper") {
-            console.log("You win!");
+            alert("You win!");
         }
         else if (computerPlayer == "rock") {
-            console.log("You lose!")
+            alert("You lose!")
         }
     }
 }
