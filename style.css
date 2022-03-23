@@ -6,10 +6,10 @@
 }
 
 body {
-    background-image: url("images/pexels-dimitry-anikin-5044497.jpg");
+    background-image: url("images/pexels-dimitry-anikin-5044497.jpg")!important;
     background-position: center;
     background-size: cover;
-    background-color: #cccccc;
+    background-color: #93AD9C;
     font-family: "Quicksand", sans-serif;
 }
 
@@ -32,7 +32,7 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: rgba(0,0,0,0.5);
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .header {
