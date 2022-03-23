@@ -40,13 +40,13 @@ function game() {
         }
         else if(player == 'rock') {
             if(computer == 'paper') {
-                result.textContent = 'Computer Won';
+                result.textContent = 'Computer chose Paper. Computer Won.';
                 result.style.color='white';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
             }
             else {
-                result.textContent = 'Player Won';
+                result.textContent = 'Computer chose scissors. You Won!';
                 result.style.color='white';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
@@ -54,13 +54,13 @@ function game() {
         }
         else if(player == 'scissors'){
             if(computer == 'rock'){
-                result.textContent = 'Computer Won';
+                result.textContent = 'Computer chose rock. Computer Won.';
                 result.style.color='white';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
             }
             else{
-                result.textContent = 'Player Won';
+                result.textContent = 'Computer chose paper. You Won!';
                 result.style.color='white';
                 playerScore++;
                 playerScoreBoard.textContent = playerScore;
@@ -68,13 +68,13 @@ function game() {
         }
         else if(player == 'paper'){
             if(computer == 'scissors') {
-                result.textContent = 'Computer Won';
+                result.textContent = 'Computer chose scissors. Computer Won.';
                 result.style.color='white';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
             }
             else {
-                result.textContent = 'Player Won';
+                result.textContent = 'Computer chose rock. You Won!';
                 result.style.color='white';
                 playerScore++;
                 computerScoreBoard.textContent = playerScore;
