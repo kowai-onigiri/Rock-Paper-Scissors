@@ -40,7 +40,7 @@ function game() {
         }
         else if(player == 'rock') {
             if(computer == 'paper') {
-                result.textContent = 'Computer chose Paper. Computer Won.';
+                result.textContent = 'Computer chose paper. Computer Won.';
                 result.style.color='white';
                 computerScore++;
                 computerScoreBoard.textContent = computerScore;
