@@ -8,7 +8,8 @@
 body {
     background-image: url("images/pexels-dimitry-anikin-5044497.jpg")!important;
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
+    background-attachment: scroll;
     background-color: #93AD9C;
     font-family: "Quicksand", sans-serif;
 }
