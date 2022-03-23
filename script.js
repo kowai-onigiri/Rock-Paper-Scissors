@@ -77,7 +77,7 @@ function game() {
                 result.textContent = 'Computer chose rock. You Won!';
                 result.style.color='white';
                 playerScore++;
-                computerScoreBoard.textContent = playerScore;
+                playerScoreBoard.textContent = playerScore;
             }
         }
     }
